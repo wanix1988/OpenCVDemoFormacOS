@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
-
+@property (weak) IBOutlet NSMenuItem *openMenuItem;
+@property (strong, nonatomic) NSString *inputImageFullPath;
+@property (strong) NSViewController *currentViewController;
 @end
 

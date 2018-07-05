@@ -9,7 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
-
-
+@property (strong) IBOutlet NSImageView *srcImg;
+@property (strong) IBOutlet NSImageView *destImg;
+- (IBAction)cannyClick:(id)sender;
 @end
 
