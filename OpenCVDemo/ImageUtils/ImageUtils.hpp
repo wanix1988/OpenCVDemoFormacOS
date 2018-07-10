@@ -28,6 +28,13 @@ using namespace cv;
 class ImageUtils {
 public:
     static Mat canny(const String& inputImageFullPath);
+    static Mat bgr2Gray(const String& inputImageFullPath);
+    static Mat meanFilter(const String& inputImageFullPath);
+    static Mat gaussianBlur(const String& inputImageFullPath);
+    static Mat gaussianSharpen(const String& inputImageFullPath);
+    static Mat erode(const String& inputImageFullPath);
+    static Mat dilate(const String& inputIMageFullPath);
+    static Mat ocr(const String& inputImageFullPath);
 };
 
 #endif /* ImageUtils_hpp */

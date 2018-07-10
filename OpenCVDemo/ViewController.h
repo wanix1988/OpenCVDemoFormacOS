@@ -11,5 +11,8 @@
 @interface ViewController : NSViewController
 @property (strong) IBOutlet NSImageView *srcImg;
 @property (strong) IBOutlet NSImageView *destImg;
+@property (strong) IBOutlet NSTextField *imgSizeLabel;
+@property (strong) IBOutlet NSTextField *imgPathLabel;
+@property (strong) IBOutlet NSTextField *imgOutputPath;
 @end
 

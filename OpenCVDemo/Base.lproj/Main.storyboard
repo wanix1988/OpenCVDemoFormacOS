@@ -716,7 +716,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gpt-XY-UAH">
                                 <rect key="frame" x="5" y="74" width="346" height="249"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="photo" id="vV6-fo-hSP"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="photo" id="vV6-fo-hSP"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWu-Bj-sTA">
                                 <rect key="frame" x="380" y="74" width="348" height="249"/>
@@ -830,7 +830,7 @@
                                 <rect key="frame" x="10" y="5" width="711" height="17"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" id="BeO-Lv-F96">
-                                        <rect key="frame" x="-2" y="0.0" width="63" height="17"/>
+                                        <rect key="frame" x="-2" y="0.0" width="61" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="图像大小:" id="4WV-bb-neZ">
                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -839,7 +839,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" id="bkZ-kN-JEM">
-                                        <rect key="frame" x="58" y="0.0" width="314" height="17"/>
+                                        <rect key="frame" x="56" y="0.0" width="66" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="_ _" usesSingleLineMode="YES" id="TRQ-RA-eFk">
                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -848,7 +848,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" id="r2L-CP-E1o">
-                                        <rect key="frame" x="369" y="0.0" width="63" height="17"/>
+                                        <rect key="frame" x="119" y="0.0" width="61" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="图像路径:" id="TTg-Yv-8N5">
                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -857,9 +857,27 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" id="Z4e-dD-zFf">
-                                        <rect key="frame" x="429" y="0.0" width="284" height="17"/>
+                                        <rect key="frame" x="177" y="0.0" width="229" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="_ _" usesSingleLineMode="YES" id="rCw-jf-Xcf">
+                                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" title="_ _" id="rCw-jf-Xcf">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" id="gsn-Wj-CdP">
+                                        <rect key="frame" x="403" y="0.0" width="91" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="图像输出路径:" id="QDn-Yh-3Wz">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" id="nF2-67-A5E">
+                                        <rect key="frame" x="491" y="0.0" width="222" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" title="_ _" id="NuC-t4-c3a">
                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -867,6 +885,8 @@
                                     </textField>
                                 </subviews>
                                 <holdingPriorities>
+                                    <real value="250"/>
+                                    <real value="250"/>
                                     <real value="250"/>
                                     <real value="250"/>
                                     <real value="250"/>
@@ -884,6 +904,9 @@
                     </view>
                     <connections>
                         <outlet property="destImg" destination="wWu-Bj-sTA" id="PLt-pa-nWt"/>
+                        <outlet property="imgOutputPath" destination="nF2-67-A5E" id="vxU-8w-itF"/>
+                        <outlet property="imgPathLabel" destination="Z4e-dD-zFf" id="NZS-nb-tui"/>
+                        <outlet property="imgSizeLabel" destination="bkZ-kN-JEM" id="geI-uL-5WF"/>
                         <outlet property="srcImg" destination="Gpt-XY-UAH" id="hSQ-K8-dGX"/>
                     </connections>
                 </viewController>
