@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		775342B220F311F4007B0580 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 775342B120F311F4007B0580 /* README.md */; };
 		779E9BB620ECB499002E38CE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 779E9BB520ECB499002E38CE /* 1.jpg */; };
 		77AA7C9A20EA3F8C000CF965 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7C9920EA3F8C000CF965 /* AppDelegate.m */; };
 		77AA7C9D20EA3F8C000CF965 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7C9C20EA3F8C000CF965 /* ViewController.mm */; };
@@ -80,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		775342B120F311F4007B0580 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		779E9BB520ECB499002E38CE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		77AA7C9520EA3F8C000CF965 /* OpenCVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AA7C9820EA3F8C000CF965 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				77AA7CA320EA3F90000CF965 /* Info.plist */,
 				77AA7CA420EA3F90000CF965 /* main.mm */,
 				77AA7CA620EA3F90000CF965 /* OpenCVDemo.entitlements */,
+				775342B120F311F4007B0580 /* README.md */,
 			);
 			path = OpenCVDemo;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 			files = (
 				779E9BB620ECB499002E38CE /* 1.jpg in Resources */,
 				77AA7C9F20EA3F90000CF965 /* Assets.xcassets in Resources */,
+				775342B220F311F4007B0580 /* README.md in Resources */,
 				77AA7CA220EA3F90000CF965 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
