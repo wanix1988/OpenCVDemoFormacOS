@@ -9,6 +9,16 @@
 #import "ViewController.h"
 #include "ImageUtils.hpp"
 
+@interface ViewController ()
+{
+    @private
+    NSString *inputImageFullPath;
+}
+- (void)doCanny;
+- (void)doBgr2Gray;
+- (void)doErote;
+@end
+
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,11 +33,9 @@
     app.currentViewController = self;
 }
 
-- (IBAction)cannyClick:(id)sender {
-    AppDelegate *app = (AppDelegate *)[[NSApplication sharedApplication] delegate];
-    NSString *inputImageFullPath = app.inputImageFullPath;
+- (void)doCanny {
     Mat destImg;
-    if (inputImageFullPath == nil) {
+    if ( [self inputImageFullPath] == nil) {
         [_srcImg setImage:[NSImage imageNamed:@"1.jpg"]];
         NSString *itemPath = @"1.jpg";
         NSArray *aArray = [itemPath componentsSeparatedByString:@"."];
@@ -43,5 +51,37 @@
     }
     imwrite([@"canny.jpg" UTF8String], destImg);
     [_destImg setImage:[[NSImage alloc] initWithContentsOfFile:@"canny.jpg"] ];
+}
+
+- (IBAction)btnClick:(id)sender {
+    AppDelegate *app = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    NSString *inputImageFullPath = app.inputImageFullPath;
+    NSInteger tag = [sender tag];
+    NSLog(@"button click");
+    switch (tag) {
+        case 0:
+            [self doBgr2Gray:inputImageFullPath];
+            break;
+        case 1:
+            [self doMeanFilter:inputImageFullPath];
+            break;
+        case 2:
+            [self doGaussianBlur:inputImageFullPath];
+            break;
+        case 3:
+            [self doGuassian]
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            [self doCanny:inputImageFullPath];
+            break;
+        case 7:
+            break;
+        default:
+            break;
+    }
 }
 @end
